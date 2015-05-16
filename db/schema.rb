@@ -14,8 +14,10 @@
 ActiveRecord::Schema.define(version: 20150514065709) do
 
   create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text   "content"
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
